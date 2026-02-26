@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="pum.webp" type="image/x-icon">
+    <title>pum</title>
+    <audio id="peido" src="peido.mp3"></audio>
+    <style>
+        .botao{
+            background-color: red;
+            width: 10rem;
+            border-radius: 10px;
+        }
+        .titulo{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo"><center>aperte o botao</center></h1>
+    <center><button class="botao" onclick="peidar()">aperte eu</button></center>
+</body>
+<script>
+    function peidar(){
+        var audio = document.getElementById("peido");
+        audio.play();
+    }
+</script>
+</html>
